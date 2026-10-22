@@ -114,25 +114,35 @@
       </td>
     </tr>
 
-<tr onmouseout="example_stop()" onmouseover="example_start()">
+<tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
   <td style="padding:20px;width:25%;vertical-align:middle">
     <div class="one">
-      <img src="your-image.jpg" width="100%">
+      <img src='images.jpeg' width=100%>
     </div>
+    <script type="text/javascript">
+      function smerf_start() {
+        document.getElementById('smerf_image').style.opacity = "1";
+      }
+
+      function smerf_stop() {
+        document.getElementById('smerf_image').style.opacity = "0";
+      }
+      smerf_stop()
+    </script>
   </td>
   <td style="padding:20px;width:75%;vertical-align:middle">
-    <div class="card">
-      <a href="your-file-or-link.html">
-        <span class="papertitle">Your Project Title</span>
-      </a>
-      <br>
-      <a>Sophie Lim</a>
-      <br>
-      <em>Made</em>, 2026
-      <br>
-      <ul>
-        <li>Description of your project goes here.</li>
-      </ul>
+    <div class = "card">
+    <a href="Fitness_Data (1).xlsx">
+      <span class="papertitle">Excel Fitness Data</span>
+    </a>
+    <br>
+    <a>Sophie Lim</a>,
+    <br>
+    <em>Made</em>, 2026
+    <br>
+    <ul>
+      <li>The excel file shows use of python to execute different mannual functions that are done in excel.</li>
+    </ul>
     </div>
   </td>
 </tr>
